@@ -19,7 +19,7 @@ with st.sidebar:
     # Crea un control deslizante (slider) que permite al usuario seleccionar un número de bins
     # en el rango de 0 a 10, con un valor predeterminado de 2.
     div = st.slider('Número de bins:', 0, 10, 2)
-    colors = st.selectbox('Selecciona un color:', ['Azul', 'Naranjo', 'Amarillo'])
+    colors = st.selectbox('Selecciona un color:', ['blue', 'orange', 'yellow'])
 
     
     # Muestra el valor actual del slider en la barra lateral.
@@ -29,7 +29,7 @@ with st.sidebar:
 
 # Desplegamos un histograma con los datos del eje X
 fig, ax = plt.subplots(1, 2, figsize=(10, 3))
-ax[0].hist(df["Age"], bins=div,color = "green")
+ax[0].hist(df["Age"], bins=div,color = colors)
 ax[0].set_xlabel("Edad")
 ax[0].set_ylabel("Frecuencia")
 ax[0].set_title("Histograma de edades")
