@@ -47,10 +47,10 @@ ax[1].set_xlabel("Sexo")
 ax[1].set_ylabel("Cantidad")
 ax[1].set_title('Distribución de hombres y mujeres')
 
-ax[1].plot(df["Survived"],df["Fare"], bins=div,color = colors)
-ax[1].set_xlabel("Survived")
-ax[1].set_ylabel("Fare")
-ax[1].set_title("survived y fare")
+ax[2].plot(df["Survived"],df["Fare"], bins=div,color = colors)
+ax[2].set_xlabel("Survived")
+ax[2].set_ylabel("Fare")
+ax[2].set_title("survived y fare")
 
 # Desplegamos el gráfico
 st.pyplot(fig)
