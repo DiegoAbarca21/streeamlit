@@ -24,6 +24,7 @@ with st.sidebar:
     
     # Muestra el valor actual del slider en la barra lateral.
     st.write("Bins=", div)
+    st.write("color=", color)
 
 
 # Desplegamos un histograma con los datos del eje X
