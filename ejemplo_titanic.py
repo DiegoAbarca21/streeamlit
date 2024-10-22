@@ -19,6 +19,7 @@ with st.sidebar:
     # Crea un control deslizante (slider) que permite al usuario seleccionar un número de bins
     # en el rango de 0 a 10, con un valor predeterminado de 2.
     div = st.slider('Número de bins:', 0, 10, 2)
+    color = st.slider('color:', 0, 10, 2)
 
     
     # Muestra el valor actual del slider en la barra lateral.
